@@ -12,9 +12,10 @@ D 语言 LMDB (Lightning Memory-Mapped Database) 绑定库
 - 无需缓存层
 - 支持多线程/多进程并发访问
 
-本库提供两种使用方式：
+本库提供三种使用方式：
 1. **底层 C 接口** (`deimos.lmdb`) - 直接映射 LMDB C API
-2. **面向对象接口** (`deimos.lmdb_oop`) - 提供更友好的 D 语言 API
+2. **面向对象接口** (`deimos.lmdb_oop`) - 提供更友好的 D 语言 API  
+3. **多进程共享客户端** (`deimos.shared_lmdb`) - 自动化多进程共享访问
 
 ## 安装
 
