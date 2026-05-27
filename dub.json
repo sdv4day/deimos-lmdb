@@ -1,0 +1,36 @@
+{
+	"description": "D language bindings for LMDB",
+	"license": "proprietary",
+	"authors": [
+		"scan"
+	],
+	"copyright": "Copyright © 2026, scan",
+	"name": "deimos-lmdb",
+	"libs-windows-x86_64": [
+		"$PACKAGE_DIR/libs/win64/lmdb"
+	],
+	"libs-linux": [
+		"lmdb"
+	],
+	"configurations": [
+		{
+			"name": "library",
+			"targetType": "library"
+		},
+		{
+			"name": "test",
+			"targetType": "executable",
+			"mainSourceFile": "examples/test_lmdb.d"
+		},
+		{
+			"name": "test-shared",
+			"targetType": "executable",
+			"mainSourceFile": "examples/test_shared_lmdb.d"
+		},
+		{
+			"name": "test-shared-simple",
+			"targetType": "executable",
+			"mainSourceFile": "examples/test_shared_simple.d"
+		}
+	]
+}
